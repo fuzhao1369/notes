@@ -15,7 +15,7 @@
 
 -   `算术类型`分为两大类：`整型`（包括字符和布尔）和`浮点`。
 
--   C++标准只规定类型尺寸的`最小尺寸`，允许编译器赋予更大尺寸（在CSAPP第二章有x86和x64的各类型尺寸）。最小尺寸如表2.1： [![tab_2_1](CPPprimer_ch2-tab_2_1.png)](https://canpi.cc/post/cpp/cpp_figs/CPPprimer_ch2-tab_2_1.png)
+-   C++标准只规定类型尺寸的`最小尺寸`，允许编译器赋予更大尺寸（在CSAPP第二章有x86和x64的各类型尺寸）。最小尺寸如表2.1： ![tab_2_1](assets/CPPprimer_ch2-tab_2_1.png)
 
 -   `布尔`类型的取值是`true`或`false`。bool类型虽然信息上只有一个bit，但由于`现代计算机的最小寻址单元是byte`，故bool型在这些机器上占8个bit的空间。
 
@@ -67,7 +67,7 @@
 -   `转义序列`：在C++中有特殊含义的字符（如单双引号、问号、反斜线等）出现在字符串中时要转义，另外一些特殊字符（如缩进、换行等）也以转义序列书写
 -   `泛化的转义序列`：形式是`\x`后紧跟1个或多个十六进制数，或`\`后紧跟1、2、3个八进制数，其中数字部分表示的是字符对应的数值。如果超过3个，八进制只看前3个，十六进制看所有数字
 -   超过8bit的十六进制字符是与表2.2中某个前缀作为开头的扩展字符集一起使用
--   表2.2中的前缀用于指定字符集，后缀用于指定字面值类型 [![tab_2_2](CPPprimer_ch2-tab_2_2.png)](https://canpi.cc/post/cpp/cpp_figs/CPPprimer_ch2-tab_2_2.png)
+-   表2.2中的前缀用于指定字符集，后缀用于指定字面值类型 ![tab_2_2](assets/CPPprimer_ch2-tab_2_2.png)
 -   例子：字面值常量
 ```cpp
 L'a'     //宽字符型字面值，类型是wchar_t
@@ -122,7 +122,7 @@ int a(0);
     -   不能连续出现两个下划线
     -   不能以下划线紧接大写字母开头
     -   定义在函数体外的标识符不能以下划线开头
--   表2.3和2.4是C++保留的名字： [![tab_2_3](CPPprimer_ch2-tab_2_3.png)](https://canpi.cc/post/cpp/cpp_figs/CPPprimer_ch2-tab_2_3.png) [![tab_2_4](CPPprimer_ch2-tab_2_4.png)](https://canpi.cc/post/cpp/cpp_figs/CPPprimer_ch2-tab_2_4.png)
+-   表2.3和2.4是C++保留的名字： [![tab_2_3](assets/CPPprimer_ch2-tab_2_3.png)](https://canpi.cc/post/cpp/cpp_figs/CPPprimer_ch2-tab_2_3.png) [![tab_2_4](assets/CPPprimer_ch2-tab_2_4.png)](https://canpi.cc/post/cpp/cpp_figs/CPPprimer_ch2-tab_2_4.png)
 
 ### 名字的作用域
 
